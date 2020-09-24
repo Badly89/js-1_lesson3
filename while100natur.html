@@ -1,0 +1,24 @@
+<script>
+    let num = 1;
+    let naturArr = [];
+
+    while (num <= 100) {
+        if (num == 1) {
+            naturArr.push(1)
+        } else {
+            let result = 2;
+            let i = 2;
+            while (num % i !== 0) {
+                i++;
+                result++;
+            }
+            if (result == num) {
+                naturArr.push(result);
+            }
+        }
+        num++;
+    }
+
+    //console.log(naturArr);
+    document.write(naturArr);
+</script>
